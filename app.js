@@ -22,38 +22,3 @@ app.listen(port, () => console.log(`Example app listening on port ${port}!`))
 
 
 
-
-/* require("dotenv").config();
-
-const { json } = require('express');
-const express = require('express');
-const app = express();
-app.use(express.json());//include json
-const port = 5000;
-const mongoose = require("mongoose");
-const companymodel=require("./model/company");
-
-
-
-
-
-mongoose.connect(process.env.MONGOURL)
-.then( ()=> console.log("connected"));
-app.get("/",(req,res)=> res.send("hello mongooes"));
-
-
-
-app.post("/add",(req,res)=>{
-    const {newcompany}=req.body;
-    //const addNewUser =userModel.create(newUser);
-    companymodel.create(newcompany);
-    return res.json({data: "registered sucessfully"});
-});
-    
-
-
-
-
- */
-
-
